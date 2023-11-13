@@ -31,6 +31,7 @@ SET FOREIGN_KEY_CHECKS=1;
 # tag is a skill category grouping.  You can assign it based on your skill descriptions.
 # time committment offers some sense of how much time was required (or will be required) to gain the skill.
 # You can assign the skill descriptions.  Please be creative!
+    
     CREATE TABLE skills(
     skills_id INT NOT NULL AUTO_INCREMENT,
     skills_name VARCHAR(255) NOT NULL,
