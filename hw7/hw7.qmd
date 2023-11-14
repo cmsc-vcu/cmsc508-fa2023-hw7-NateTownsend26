@@ -105,16 +105,48 @@ Each table serves a distinct purpose within the database, contributing to a comp
 ```{mermaid}
 %%| echo: false
 erDiagram
-    CUSTOMER ||--o{ ORDER : places
-    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
-    CUSTOMER{
-        int id
-        string first
-        string last_name
+    PEOPLE ||--o{ PEOPLESKILLS : "has"
+    SKILLS ||--o{ PEOPLESKILLS : "acquired by"
+    PEOPLE ||--o{ PEOPLESROLES : "assumes"
+    ROLES ||--o{ PEOPLESROLES : "assigned to"
+    
+    PEOPLE{
+        int people_id PK "Primary Key"
+        varchar first_name "Nullable"
+        varchar last_name "Not Nullable"
+        varchar email "Nullable"
+        varchar linkedin_url "Nullable"
+        varchar headshot_url "Nullable"
+        varchar discord_handle "Nullable"
+        text brief_bio "Nullable, Text"
+        date date_joined "Not Nullable"
     }
-    DELIVERY-ADDRESS {
-        int id 
+    SKILLS{
+        int skills_id PK "Primary Key"
+        varchar skills_name "Not Nullable"
+        varchar skills_description "Not Nullable"
+        varchar skills_tag "Not Nullable"
+        varchar skills_url "Nullable"
+        varchar skills_time_commitment "Nullable"
     }
+    PEOPLESKILLS{
+        int peopleskills_id PK "Primary Key"
+        int skills_id FK "Foreign Key"
+        int people_id FK "Foreign Key"
+        date date_acquired "Not Nullable"
+    }
+    ROLES{
+        int roles_id PK "Primary Key"
+        varchar roles_name "Not Nullable"
+        int roles_sort_priority "Not Nullable"
+    }
+    PEOPLESROLES{
+        int peopleroles_id PK "Primary Key"
+        int people_id FK "Foreign Key"
+        int role_id FK "Foreign Key"
+        date date_assigned "Not Nullable"
+    }
+```
 ```
 
 ## Examples of data in the database
