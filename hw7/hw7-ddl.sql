@@ -82,7 +82,7 @@ CREATE TABLE people (
 # Their last names must exactly be “Person 1”, “Person 2”, etc.
 # Other fields are for you to assign.
 
-insert into people (people_id,people_last_name) values (1,'Person 1');
+#insert into people (people_id,people_last_name) values (1,'Person 1');
 INSERT INTO people (first_name, last_name, email, linkedin_url, headshot_url, discord_handle, brief_bio, date_joined) VALUES
 ('Christopher', 'Person 1', 'christopher1@example.com', 'http://linkedin.com/in/christopher1', 'http://example.com/headshots/1.jpg', 'christopher1#0001', 'Innovative software engineer with a passion for coding and a knack for problem-solving, dedicated to contributing to cutting-edge open-source projects.', '2022-01-15'),
 ('Sophie', 'Person 2', 'sophie2@example.com', 'http://linkedin.com/in/sophie2', 'http://example.com/headshots/2.jpg', 'sophie2#0002', 'Marketing aficionado with a keen eye for market trends and a talent for crafting compelling brand narratives, leveraging a creative approach to captivate audiences.', '2022-02-20'),
