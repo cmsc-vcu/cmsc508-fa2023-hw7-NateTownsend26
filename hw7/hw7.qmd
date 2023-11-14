@@ -109,11 +109,11 @@ erDiagram
     CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
     CUSTOMER{
         int id
-        string first_name
+        string first
         string last_name
     }
     DELIVERY-ADDRESS {
-        int id
+        int id 
     }
 ```
 
