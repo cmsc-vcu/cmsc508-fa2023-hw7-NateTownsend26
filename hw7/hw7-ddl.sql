@@ -217,22 +217,23 @@ CREATE TABLE peopleroles (
 # Person 9 is Developer
 # Person 10 is Developer and Designer
 
-INSERT INTO peopleroles (person_id, role_id, date_assigned) VALUES
-(1, 1, CURDATE()), # Person 1 is a Developer
-(2, 2, CURDATE()), # Person 2 is a Boss
-(2, 3, CURDATE()), # Person 2 is also a Mentor
-(3, 4, CURDATE()), # Person 3 is a Developer
-(3, 5, CURDATE()), # Person 3 is also a Team Lead
-(4, 6, CURDATE()), # Person 4 is a Recruit
-(5, 7, CURDATE()), # Person 5 is a Recruit
-(6, 8, CURDATE()), # Person 6 is a Developer
-(6, 1, CURDATE()), # Person 6 is also a Designer
-(7, 9, CURDATE()), # Person 7 is a Designer
-(8, 10, CURDATE()), # Person 8 is a Designer
-(8, 11, CURDATE()), # Person 8 is also a Team Lead
-(9, 12, CURDATE()), # Person 9 is a Developer
-(10, 13, CURDATE()), # Person 10 is a Developer
-(10, 1, CURDATE()); # Person 10 is also a Designer
+INSERT INTO peopleroles (people_id, role_id, date_assigned) VALUES
+(1, 1, CURDATE()), -- Person 1 is a Developer
+(2, 2, CURDATE()), -- Person 2 is a Boss
+(2, 3, CURDATE()), -- Person 2 is also a Mentor
+(3, 4, CURDATE()), -- Person 3 is a Developer
+(3, 5, CURDATE()), -- Person 3 is also a Team Lead
+(4, 6, CURDATE()), -- Person 4 is a Recruit
+(5, 7, CURDATE()), -- Person 5 is a Recruit
+(6, 8, CURDATE()), -- Person 6 is a Developer
+(6, 1, CURDATE()), -- Person 6 is also a Designer
+(7, 9, CURDATE()), -- Person 7 is a Designer
+(8, 10, CURDATE()), -- Person 8 is a Designer
+(8, 11, CURDATE()), -- Person 8 is also a Team Lead
+(9, 12, CURDATE()), -- Person 9 is a Developer
+(10, 13, CURDATE()), -- Person 10 is a Developer
+(10, 1, CURDATE()); -- Person 10 is also a Designer
+
 
 
 
