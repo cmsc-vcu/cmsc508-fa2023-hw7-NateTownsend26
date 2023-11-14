@@ -9,8 +9,7 @@ format:
         embed-resources: true
         code-copy: true
 ---
-
-(include a brief description of what is in this document)
+This Project is a sample resume database.
 
 
 
