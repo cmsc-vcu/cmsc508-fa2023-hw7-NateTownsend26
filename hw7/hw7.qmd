@@ -12,7 +12,7 @@ format:
 
 (include a brief description of what is in this document)
 
-(Please clean up any comments that I included.  This is a scaffold document.)
+
 
 GITHUB URL:  <https://github.com/cmsc-vcu/cmsc508-fa2023-hw7-NateTownsend26/edit/main/hw7/hw7.qmd>
 
@@ -92,7 +92,11 @@ except Exception as e:
 
 ## Overview and description
 
-(briefly describe the project and the database)
+The primary goal of this assignment is to showcase a high level of proficiency in SQL by undertaking tasks involving the creation, population, and querying of a relational database.
+
+The structured database encompasses tables designed to store information about individuals (people), their respective skills (skills), the various roles they might undertake (roles), and the specific skills attributed to each person (peopleskills). Additionally, a table is dedicated to mapping individuals to their corresponding roles (peopleroles).
+
+Each table serves a distinct purpose within the database, contributing to a comprehensive representation of the data. The provided sample queries in the documentation serve as practical illustrations of how to extract valuable insights from this dataset. Examples include identifying all individuals with a particular skill or role, compiling a list of unused skills, and pinpointing individuals lacking any registered skills. These queries are specifically formulated for execution in a Jupyter notebook environment, leveraging Python for seamless connectivity and interaction with the MySQL database.
 
 ## Crows-foot diagram
 
@@ -225,5 +229,5 @@ df
 
 ## Reflection
 
-(Write a paragraph expressing your thoughts, feelings, and insights about your experience with this assignment.  Pause and breath before writing - I'm trying to encourage critical thinking and self-awareness while allowing you to explore the connections between theory and practice. And yes, delete this paragraph.)
+Embarking on this database assignment has proven to be an illuminating exploration into the pragmatic application of relational database theory. It facilitated a hands-on journey that effectively bridged the gap between abstract concepts and the practical intricacies of real-world database design. Through the meticulous construction of a database schema, the establishment of relationships, and the creative population of tables, I acquired a profound comprehension of how fundamental database normalization principles form the bedrock of efficient data organization. The assignment emphasized the significance of precision in naming conventions and the foresight essential for planning scalability. The manual assignment of IDs to specific tables before transitioning to auto-increment highlighted the evolution from manual control to database-managed processes. Moreover, the imperative to consider NULL handling prompted critical contemplation regarding the nature of data and its representation. In its entirety, this assignment provided a clear trajectory into what database administration entails, offering a narrative on the meticulous care and strategic thinking that underlies the development of robust data management systems.
 
